@@ -26,7 +26,7 @@ client = Client(account_sid, auth_token)
 #client = Client(account_sid, auth_token, subaccount_sid)
 
 gmaps = googlemaps.Client(key=os.environ['GOOGLE_MAPS_API_KEY'])
-GREETINGS = ['yo', 'hello', 'hi', 'howdy', 'start', 'nav', 'navigate', 'directions', 'help']
+GREETINGS = ['yo', 'hello', 'hi', 'howdy', 'start', 'nav', 'navigate', 'directions', 'lost']
 INSTRUCTIONS = "Ask me for directions between two places, and I'll get the directions from Google Maps! e.g. 'directions from Boston to New York' \n\nOptionally, you can specify if you're walking/using transit by adding 'by walking' or 'by transit' (default mode is driving) \ne.g. 'how do I get from Central Park to the Brooklyn Museum by transit'.\n\nYou can also save locations by typing 'save <address> as <alias>', e.g. 'save 101 Sesame Street as home'! \n\nIf you're really lost, you can copy your latitude and longitude from the Compass app on your phone and paste it here as your start location."
 
 def cleanhtml(raw_html):
